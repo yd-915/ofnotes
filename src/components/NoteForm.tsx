@@ -125,14 +125,6 @@ export const NoteForm: React.FC<Props> = ({
         {...rest}
       />
 
-      <NoteTextField
-        name="tags"
-        label="Tags"
-        error={!!errors.tags}
-        helperText={errors.tags ?? "Separated by spaces"}
-        value={values.tags.join(" ")}
-        {...rest}
-      />
 
       {showDelete && (
         <Button
