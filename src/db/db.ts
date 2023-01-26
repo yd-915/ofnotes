@@ -6,7 +6,7 @@ export const LIST_SIZE = 100;
 
 export interface UserNoteFields {
   title: string;
-  tags: string[];
+ 
   md: string;
 }
 
@@ -27,7 +27,7 @@ export class NotesDB extends Dexie {
     super("NotesDB");
 
     this.version(1).stores({
-      notes: "++id, &title, *tags, modified, &slug",
+      notes: "++id, &title, , modified, &slug",
     });
     this.notes = this.table("notes");
 
