@@ -5,7 +5,9 @@
 export default [
   {
     title: "Welcome",
-   
+     tags: ["meta", "ofnote"],
+    modified: 1572914983219,
+    slug: "welcome",
     md: `
 
 
