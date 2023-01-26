@@ -73,16 +73,8 @@ export const SideMenuHeader: React.FC<Props> = ({
           </Typography>
         </div>
       )}
-      <IconButton href="https://github.com/jhackshaw/ofnotes">
-        <GithubIcon />
-      </IconButton>
-      <IconButton onClick={() => togglePalette()}>
-        {paletteType === "dark" ? (
-          <LightModeIcon titleAccess="set light theme" />
-        ) : (
-          <DarkModeIcon titleAccess="set dark theme" />
-        )}
-      </IconButton>
+      
+    
       {expanded ? (
         <IconButton onClick={() => onClose()}>
           <CloseIcon titleAccess="close menu" />
