@@ -5,7 +5,7 @@
 export default [
   {
     title: "Welcome",
-     tags: ["meta", "iftiin-notes"],
+     
        modified: 24354565768,
     slug: "welcome",
 
