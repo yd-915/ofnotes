@@ -12,7 +12,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import OpenIcon from "@material-ui/icons/Menu";
 
 import CreateNoteIcon from "@material-ui/icons/NoteAdd";
-import { useThemeContext } from "hooks";
+
 
 const useStyles = makeStyles((theme) =>
   createStyles({
