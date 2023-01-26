@@ -7,11 +7,10 @@ import {
   Hidden,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import GithubIcon from "@material-ui/icons/GitHub";
+
 import CloseIcon from "@material-ui/icons/Close";
 import OpenIcon from "@material-ui/icons/Menu";
-import LightModeIcon from "@material-ui/icons/Brightness7";
-import DarkModeIcon from "@material-ui/icons/Brightness5";
+
 import CreateNoteIcon from "@material-ui/icons/NoteAdd";
 import { useThemeContext } from "hooks";
 
@@ -49,7 +48,7 @@ export const SideMenuHeader: React.FC<Props> = ({
   expanded,
 }) => {
   const classes = useStyles(expanded);
-  const { paletteType, togglePalette } = useThemeContext();
+  
 
   return (
     <div className={classes.root}>
