@@ -63,13 +63,13 @@ export const SideMenuHeader: React.FC<Props> = ({
       {expanded && (
         <div className={classes.header}>
           <Typography variant="h5">
-            OfNote
+            Iftiin-Notes
             <small>
               <em>s</em>
             </small>
           </Typography>
           <Typography variant="subtitle2" color="textSecondary">
-            Offline note taking
+            Offline note taking App
           </Typography>
         </div>
       )}
