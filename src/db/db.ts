@@ -63,7 +63,7 @@ export class NotesDB extends Dexie {
     return this.notes
       .where("title")
      
-      .offset(start)
+      
       .limit(LIST_SIZE)
       .toArray();
   }
