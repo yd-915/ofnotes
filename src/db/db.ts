@@ -45,7 +45,7 @@ export class NotesDB extends Dexie {
       ...(await this.validate(note)),
       slug: slugify(note.title, { lower: true }),
       modified: Date.now(),
-      tags: note.tags.filter((t) => Boolean(t)),
+      
     });
     return (await this.notes.get(id)) as Note;
   }
@@ -63,7 +63,6 @@ export class NotesDB extends Dexie {
     return this.notes
       .where("title")
       .startsWithIgnoreCase(filter)
-      .or("tags")
       .startsWithIgnoreCase(filter)
       .offset(start)
       .limit(LIST_SIZE)
