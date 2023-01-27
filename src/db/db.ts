@@ -64,8 +64,8 @@ export class NotesDB extends Dexie {
       .where("title")
      
       
-      .limit(LIST_SIZE)
-      .toArray();
+    
+      
   }
 
   async update(noteId: number, note: UserNoteFields) {
