@@ -76,7 +76,7 @@ export class NotesDB extends Dexie {
       ...(await this.validate(note)),
       slug: slugify(note.title, { lower: true }),
       modified: Date.now(),
-      tags: note.tags.filter((t) => Boolean(t)),
+      
     });
     return (await this.notes.get(noteId)) as Note;
   }
