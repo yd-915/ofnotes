@@ -62,9 +62,7 @@ export class NotesDB extends Dexie {
   async listWithFilter(filter: string, start: number = 0) {
     return this.notes
       .where("title")
-     
-      
-    .toArray();
+ 
       
   }
 
