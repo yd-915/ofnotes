@@ -144,9 +144,7 @@ export const RenderedNote: React.FC<Props> = ({ note }) => {
         </Markdown>
       </div>
       <div className={classes.tags}>
-        {note.tags.filter(Boolean).map((t) => (
-          <Chip key={t} variant="outlined" label={t} className={classes.chip} />
-        ))}
+       
       </div>
     </div>
   );
