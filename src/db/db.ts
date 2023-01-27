@@ -64,7 +64,7 @@ export class NotesDB extends Dexie {
       .where("title")
      
       
-    
+    .toArray();
       
   }
 
