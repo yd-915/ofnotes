@@ -62,8 +62,7 @@ export class NotesDB extends Dexie {
   async listWithFilter(filter: string, start: number = 0) {
     return this.notes
       .where("title")
-      .startsWithIgnoreCase(filter)
-      .startsWithIgnoreCase(filter)
+     
       .offset(start)
       .limit(LIST_SIZE)
       .toArray();
