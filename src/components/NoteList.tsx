@@ -49,8 +49,7 @@ export const NoteList: React.FC<Props> = ({ notes }) => {
             secondary={
               <span>
                 {moment(note.modified).fromNow()}
-                {note.tags.length ? bull : ""}
-                {note.tags.join(", ")}
+               
               </span>
             }
           />
